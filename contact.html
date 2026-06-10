@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Digital Skills Training Academy</title>
+  <meta name="description" content="Get in touch with Digital Skills Training Academy — admissions, general enquiries, or partnership opportunities." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo" aria-label="Digital Skills Academy Home">
+        <div class="logo-mark">DS</div>
+        <div class="logo-text">Digital Skills<span>Training Academy</span></div>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main navigation">
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="courses.html" class="nav-cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="about-hero" aria-label="Contact page header">
+      <p class="hero-eyebrow" style="justify-content:center; margin-bottom:1rem;">💬 Get in Touch</p>
+      <h1>We'd Love to Hear From You</h1>
+      <p>Admissions questions, partnership opportunities, or just a hello — our team responds within one business day.</p>
+      <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Contact</span>
+      </nav>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="section-inner">
+        <h2 id="contact-heading" class="sr-only">Contact Information and Form</h2>
+
+        <div class="contact-layout">
+
+          <!-- LEFT: Contact Info -->
+          <aside aria-label="Contact details">
+            <div class="contact-info-card">
+              <h3>Contact Details</h3>
+              <p>Reach us through any of the channels below, or fill in the form and we'll get back to you promptly.</p>
+
+              <div class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Address</strong>
+                  <p>12 Innovation Drive, Tech Hub<br>Cape Town, 8001<br>South Africa</p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <div>
+                  <strong>Phone</strong>
+                  <p>
+                    <a href="tel:+27211234567" style="color:rgba(248,250,255,0.7);">+27 21 123 4567</a><br>
+                    Mon–Fri, 8 AM – 6 PM SAST
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <p>
+                    <a href="mailto:hello@digitalskillsacademy.com" style="color:rgba(248,250,255,0.7);">hello@digitalskillsacademy.com</a><br>
+                    <a href="mailto:admissions@digitalskillsacademy.com" style="color:rgba(248,250,255,0.7);">admissions@digitalskillsacademy.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon" aria-hidden="true">🏢</div>
+                <div>
+                  <strong>Also in</strong>
+                  <p>Johannesburg · Nairobi · Online (Global)</p>
+                </div>
+              </div>
+
+              <!-- Social media links -->
+              <div class="social-links" aria-label="Social media">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on X (Twitter)">𝕏</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Connect on LinkedIn">in</a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Watch on YouTube">▶</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow on Facebook">f</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow on Instagram">📷</a>
+              </div>
+
+              <!-- Map placeholder -->
+              <div class="map-wrap" aria-label="Location map placeholder">
+                <div class="map-placeholder">
+                  <div class="map-icon">🗺️</div>
+                  <p>12 Innovation Drive, Tech Hub<br>Cape Town, South Africa</p>
+                  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                     style="color:var(--teal); font-size:0.82rem; font-weight:600; display:inline-block; margin-top:0.5rem;">
+                    Open in Google Maps ↗
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </aside>
+
+          <!-- RIGHT: Contact Form -->
+          <div class="contact-form-wrap">
+            <h3>Send Us a Message</h3>
+            <p>Whether you're enquiring about enrolment, fees, or anything else — we're happy to help.</p>
+
+            <form action="#" method="post" aria-label="Contact form" onsubmit="handleSubmit(event)">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="first-name" name="first-name"
+                         placeholder="e.g. Amara"
+                         required
+                         autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="last-name" name="last-name"
+                         placeholder="e.g. Mensah"
+                         required
+                         autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email"
+                       placeholder="your@email.com"
+                       required
+                       autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="+27 xx xxx xxxx"
+                       autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="course-interest">Course of Interest</label>
+                <select id="course-interest" name="course-interest">
+                  <option value="" disabled selected>Select a course…</option>
+                  <option value="webdev">Full-Stack Web Development</option>
+                  <option value="data">Data Science &amp; Analytics</option>
+                  <option value="cybersec">Cybersecurity Foundations</option>
+                  <option value="uiux">UI/UX &amp; Digital Design</option>
+                  <option value="cloud">Cloud Computing &amp; DevOps</option>
+                  <option value="aiml">AI Engineering &amp; Machine Learning</option>
+                  <option value="other">Other / Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="enquiry-type">Enquiry Type</label>
+                <select id="enquiry-type" name="enquiry-type">
+                  <option value="" disabled selected>Select type…</option>
+                  <option value="admissions">Admissions &amp; Enrolment</option>
+                  <option value="fees">Fees &amp; Funding</option>
+                  <option value="schedule">Schedule &amp; Format</option>
+                  <option value="partnership">Corporate Partnership</option>
+                  <option value="general">General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message"
+                          placeholder="Tell us what you'd like to know — the more detail, the better we can help."
+                          required></textarea>
+              </div>
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent">
+                  I agree to the <a href="#">Privacy Policy</a> and consent to Digital Skills Academy storing my details to respond to this enquiry.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:0.85rem;">
+                Send Message →
+              </button>
+
+              <div id="form-success"
+                   role="alert"
+                   aria-live="polite"
+                   style="display:none; margin-top:1rem; background:rgba(0,201,167,0.1); border:1px solid rgba(0,201,167,0.4); border-radius:var(--radius-sm); padding:1rem; color:#006a57; font-size:0.9rem; text-align:center;">
+                ✅ Message sent! We'll get back to you within one business day.
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section section-alt" aria-labelledby="faq-heading">
+      <div class="section-inner">
+        <header class="section-header centered">
+          <span class="section-label">Common Questions</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </header>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; max-width:900px; margin:0 auto;">
+          <article style="background:white; padding:1.75rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm); border:1px solid var(--silver);">
+            <h3 style="font-size:1rem; margin-bottom:0.5rem;">Do I need prior experience to enrol?</h3>
+            <p style="font-size:0.88rem;">Most courses have beginner tracks — no prior coding or design experience needed. Our admissions team will assess your background and recommend the right starting point.</p>
+          </article>
+          <article style="background:white; padding:1.75rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm); border:1px solid var(--silver);">
+            <h3 style="font-size:1rem; margin-bottom:0.5rem;">Are courses fully online?</h3>
+            <p style="font-size:0.88rem;">Most programmes run online-first with optional in-person sessions in Cape Town, Johannesburg, and Nairobi. Cohort live sessions are recorded for later review.</p>
+          </article>
+          <article style="background:white; padding:1.75rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm); border:1px solid var(--silver);">
+            <h3 style="font-size:1rem; margin-bottom:0.5rem;">What is the job guarantee policy?</h3>
+            <p style="font-size:0.88rem;">If you complete the programme and don't find relevant employment within 6 months, you attend the next cohort free of charge. Full details are in the enrolment agreement.</p>
+          </article>
+          <article style="background:white; padding:1.75rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm); border:1px solid var(--silver);">
+            <h3 style="font-size:1rem; margin-bottom:0.5rem;">Are payment plans available?</h3>
+            <p style="font-size:0.88rem;">Yes — we offer monthly instalments, income-share agreements for qualifying students, and corporate invoicing for employer-sponsored enrolments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTERNAL RESOURCES (Contact version) -->
+    <section class="section" aria-labelledby="ext-resources-heading">
+      <div class="section-inner">
+        <header class="section-header centered">
+          <span class="section-label">Explore Further</span>
+          <h2 id="ext-resources-heading">Useful External Links</h2>
+          <p>Resources we recommend while you wait to hear from us.</p>
+        </header>
+        <div class="external-links-grid">
+          <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" class="ext-link-card">
+            <div class="ext-icon">📚</div>
+            <div>
+              <h4>MDN Web Docs</h4>
+              <p>The web's most reliable HTML, CSS &amp; JavaScript reference.</p>
+              <span>Visit MDN ↗</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/learning" target="_blank" rel="noopener noreferrer" class="ext-link-card">
+            <div class="ext-icon">💼</div>
+            <div>
+              <h4>LinkedIn Learning</h4>
+              <p>Short courses to supplement your digital skills while you wait for your cohort.</p>
+              <span>Visit LinkedIn Learning ↗</span>
+            </div>
+          </a>
+          <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" class="ext-link-card">
+            <div class="ext-icon">💡</div>
+            <div>
+              <h4>Stack Overflow</h4>
+              <p>The world's largest developer Q&amp;A community for coding questions.</p>
+              <span>Visit Stack Overflow ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">DS</div>
+            <div class="logo-text">Digital Skills<span>Training Academy</span></div>
+          </a>
+          <p>Empowering professionals with the digital skills they need to thrive in a technology-driven world.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html">Web Development</a></li>
+            <li><a href="courses.html">Data Science</a></li>
+            <li><a href="courses.html">Cybersecurity</a></li>
+            <li><a href="courses.html">Cloud Computing</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Academy</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="about.html">Mission & Vision</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Docs ↗</a></li>
+            <li><a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Digital Skills Training Academy. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('form-success').style.display = 'block';
+        btn.style.display = 'none';
+        e.target.reset();
+      }, 800);
+    }
+  </script>
+
+</body>
+</html>
