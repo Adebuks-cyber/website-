@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Digital Skills Training Academy</title>
+  <meta name="description" content="Learn about Digital Skills Training Academy — our story, mission, vision, and the team driving tech education forward." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo" aria-label="Digital Skills Academy Home">
+        <div class="logo-mark">DS</div>
+        <div class="logo-text">Digital Skills<span>Training Academy</span></div>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main navigation">
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="courses.html" class="nav-cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="about-hero" aria-label="About page header">
+      <p class="hero-eyebrow" style="justify-content:center; margin-bottom:1rem;">🏛️ Our Story</p>
+      <h1>We Believe Everyone Deserves<br>Digital Fluency</h1>
+      <p>Founded in 2015, we've been turning curiosity into careers — one cohort at a time.</p>
+      <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>About</span>
+      </nav>
+    </section>
+
+    <!-- ABOUT INTRO -->
+    <section class="section" aria-labelledby="about-intro-heading">
+      <div class="section-inner">
+        <div class="about-intro">
+          <div>
+            <span class="section-label">Who We Are</span>
+            <h2 id="about-intro-heading">A Different Kind of Tech School</h2>
+            <p style="margin-top:1rem; margin-bottom:1rem;">Digital Skills Training Academy was born out of frustration — frustration with outdated curricula, passive lecture halls, and degrees that cost a fortune but didn't reflect what the industry needed.</p>
+            <p style="margin-bottom:1rem;">We started with six students, two instructors, and a rented co-working space. Today we operate across three cities, with a fully online programme that reaches students on six continents.</p>
+            <p>Our instructors are active professionals — developers, data engineers, and designers who bring live industry context into every class. We update our curricula every quarter to match the market.</p>
+            <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+              <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+              <a href="contact.html" class="btn btn-dark">Get in Touch</a>
+            </div>
+          </div>
+
+          <!-- About image 1 -->
+          <img src="images/about-classroom.jpg"
+               alt="Students in a hands-on coding workshop at Digital Skills Academy"
+               width="560" height="400"
+               onerror="this.style.background='linear-gradient(135deg,#1A3362,#0F1F3D)'; this.style.display='block'; this.alt='Classroom image placeholder';" />
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="section section-alt" aria-labelledby="mv-heading">
+      <div class="section-inner">
+        <header class="section-header centered">
+          <span class="section-label">What Drives Us</span>
+          <h2 id="mv-heading">Mission &amp; Vision</h2>
+        </header>
+        <div class="mv-grid">
+          <article class="mv-card">
+            <h3><span class="icon">🎯</span> Our Mission</h3>
+            <p>To provide accessible, industry-aligned digital skills training that transforms learners into confident professionals — regardless of their starting point, background, or geography.</p>
+            <p style="margin-top:0.75rem;">We measure success not by enrolment numbers, but by employment outcomes. Every programme is designed with a single question: <em>does this get students hired?</em></p>
+          </article>
+          <article class="mv-card">
+            <h3><span class="icon">🔭</span> Our Vision</h3>
+            <p>A world where the digital divide is a thing of the past — where anyone with drive and curiosity can access the knowledge they need to build a meaningful career in technology.</p>
+            <p style="margin-top:0.75rem;">By 2030, we aim to have trained over 100,000 professionals and established learning partnerships in 50 countries.</p>
+          </article>
+          <article class="mv-card">
+            <h3><span class="icon">💎</span> Core Values</h3>
+            <ul style="list-style:none; padding:0;">
+              <li style="padding:0.4rem 0; border-bottom:1px solid var(--silver); font-size:0.9rem; color:var(--slate);">✅ Outcomes over credentials</li>
+              <li style="padding:0.4rem 0; border-bottom:1px solid var(--silver); font-size:0.9rem; color:var(--slate);">✅ Radical transparency</li>
+              <li style="padding:0.4rem 0; border-bottom:1px solid var(--silver); font-size:0.9rem; color:var(--slate);">✅ Continuous curriculum updates</li>
+              <li style="padding:0.4rem 0; border-bottom:1px solid var(--silver); font-size:0.9rem; color:var(--slate);">✅ Inclusive, supportive community</li>
+              <li style="padding:0.4rem 0; font-size:0.9rem; color:var(--slate);">✅ Industry partnership first</li>
+            </ul>
+          </article>
+          <article class="mv-card">
+            <h3><span class="icon">🤝</span> Our Promise</h3>
+            <p>If you complete our programme and don't land a relevant job within 6 months, we'll give you another cohort free of charge — no fine print.</p>
+            <p style="margin-top:0.75rem;">We only win when you win. That's not marketing; that's our business model.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY TIMELINE -->
+    <section class="section" aria-labelledby="history-heading">
+      <div class="section-inner">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+          <div>
+            <span class="section-label">How We Got Here</span>
+            <h2 id="history-heading">Our Journey</h2>
+            <p style="margin-top:0.75rem; margin-bottom:2rem;">From a small co-working room to a global training platform — each step shaped by student feedback and industry partnership.</p>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2015</div>
+                <h4>Founded in Cape Town</h4>
+                <p>Six students, two instructors, one mission: practical digital skills that actually get you hired.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2017</div>
+                <h4>Expanded to Johannesburg & Nairobi</h4>
+                <p>Opened two new campuses after graduating our first 500 students with a 91% placement rate.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2019</div>
+                <h4>Launched Online Platform</h4>
+                <p>Moved 40% of content online, reaching students across Africa, Europe, and North America.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <h4>10,000 Graduates Milestone</h4>
+                <p>Celebrated our 10,000th graduate and launched our first employer hiring network.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <h4>AI & Cloud Programmes Added</h4>
+                <p>Responded to market demand with new tracks in AI/ML engineering and cloud architecture.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- About image 2 -->
+          <div>
+            <img src="images/about-team.jpg"
+                 alt="The Digital Skills Academy instructor team at the 2024 annual summit"
+                 width="520" height="600"
+                 style="border-radius:var(--radius-lg); box-shadow:var(--shadow-md); width:100%; height:480px; object-fit:cover; background:linear-gradient(135deg,#1A3362,#0F1F3D);"
+                 onerror="this.style.background='linear-gradient(135deg,#1A3362,#0F1F3D)';" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section section-alt" aria-labelledby="team-heading">
+      <div class="section-inner">
+        <header class="section-header centered">
+          <span class="section-label">The People</span>
+          <h2 id="team-heading">Meet the Instructors</h2>
+          <p>Our faculty are practitioners first, teachers second.</p>
+        </header>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-avatar">
+              <img src="images/instructor-1.jpg"
+                   alt="Portrait of Dr. Amara Osei, Lead Data Science Instructor"
+                   width="100" height="100"
+                   onerror="this.parentElement.style.background='var(--navy)'; this.remove();" />
+            </div>
+            <h4>Dr. Amara Osei</h4>
+            <p style="color:var(--teal-dark); font-size:0.8rem; font-weight:600; margin-bottom:0.35rem;">Lead — Data Science</p>
+            <p>Former data engineer at Google with 12 years of industry experience. PhD in Applied Mathematics.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar">
+              <img src="images/instructor-2.jpg"
+                   alt="Portrait of Sarah Kimani, Senior Web Development Instructor"
+                   width="100" height="100"
+                   onerror="this.parentElement.style.background='var(--navy)'; this.remove();" />
+            </div>
+            <h4>Sarah Kimani</h4>
+            <p style="color:var(--teal-dark); font-size:0.8rem; font-weight:600; margin-bottom:0.35rem;">Lead — Web Development</p>
+            <p>Full-stack engineer with 9 years at startups and scale-ups. React contributor and OSS advocate.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar">
+              <img src="images/instructor-3.jpg"
+                   alt="Portrait of Marcus Dlamini, Cybersecurity Programme Lead"
+                   width="100" height="100"
+                   onerror="this.parentElement.style.background='var(--navy)'; this.remove();" />
+            </div>
+            <h4>Marcus Dlamini</h4>
+            <p style="color:var(--teal-dark); font-size:0.8rem; font-weight:600; margin-bottom:0.35rem;">Lead — Cybersecurity</p>
+            <p>CISSP-certified security consultant. Former penetration tester with government and fintech clients.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="cta-band-inner">
+        <h2>Become Part of Our Story</h2>
+        <p>Applications are open for our next cohort starting in January 2026.</p>
+        <div class="cta-band-actions">
+          <a href="courses.html" class="btn btn-primary">View Courses</a>
+          <a href="contact.html" class="btn btn-outline">Apply Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">DS</div>
+            <div class="logo-text">Digital Skills<span>Training Academy</span></div>
+          </a>
+          <p>Empowering professionals with the digital skills they need to thrive in a technology-driven world.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html">Web Development</a></li>
+            <li><a href="courses.html">Data Science</a></li>
+            <li><a href="courses.html">Cybersecurity</a></li>
+            <li><a href="courses.html">Cloud Computing</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Academy</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="about.html">Mission & Vision</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Docs ↗</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Digital Skills Training Academy. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
