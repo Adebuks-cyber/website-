@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Skills Training Academy — Home</title>
+  <meta name="description" content="Master in-demand digital skills with expert-led courses in Web Development, Data Science, Cybersecurity, and more." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo" aria-label="Digital Skills Academy Home">
+        <div class="logo-mark">DS</div>
+        <div class="logo-text">
+          Digital Skills
+          <span>Training Academy</span>
+        </div>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="courses.html" class="nav-cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero banner">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">🎓 #1 Rated Digital Academy</p>
+          <h1>Build Skills That <em>Shape Your Future</em></h1>
+          <p>Industry-aligned training in web development, data science, cybersecurity, and design — taught by practitioners, not theorists.</p>
+          <div class="hero-actions">
+            <a href="courses.html" class="btn btn-primary">Browse Courses →</a>
+            <a href="about.html" class="btn btn-outline">Our Story</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Hero image — replace src with a real photo -->
+          <div class="hero-img-wrap">
+            <img src="images/banner.jpg"
+                 alt="Students collaborating on laptops in a modern classroom"
+                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🖥️</span><span>banner.jpg</span></div>'" />
+          </div>
+          <div class="hero-badge">
+            <div class="hero-badge-icon">🏆</div>
+            <div>
+              <strong>4.9★</strong>
+              <span>Student satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar" aria-label="Academy statistics">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">12,000+</div>
+          <div class="stat-label">Graduates</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Job placement rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Expert instructors</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Courses offered</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED COURSES -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <span class="section-label">What We Teach</span>
+          <h2 id="featured-heading">Featured Courses</h2>
+          <p>Hands-on programs built around what employers are actually hiring for right now.</p>
+        </header>
+
+        <div class="courses-grid" role="list">
+
+          <!-- Card 1 -->
+          <article class="course-card" role="listitem">
+            <div class="card-img">
+              <img src="images/webdev.jpg"
+                   alt="Web development course — HTML, CSS, JavaScript coding on a monitor"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🌐</span><span>webdev.jpg</span></div>'" />
+              <span class="card-badge">Bestseller</span>
+            </div>
+            <div class="card-body">
+              <h3>Full-Stack Web Development</h3>
+              <p>From HTML fundamentals to React and Node.js — build real-world web applications from day one.</p>
+              <div class="card-meta">
+                <span>⏱ 16 weeks</span>
+                <span>🎓 Beginner–Intermediate</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="course-card" role="listitem">
+            <div class="card-img">
+              <img src="images/data.jpg"
+                   alt="Data science course — charts and graphs on a laptop screen"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>📊</span><span>data.jpg</span></div>'" />
+              <span class="card-badge">Hot</span>
+            </div>
+            <div class="card-body">
+              <h3>Data Science & Analytics</h3>
+              <p>Learn Python, pandas, and machine learning to extract insights from complex datasets.</p>
+              <div class="card-meta">
+                <span>⏱ 12 weeks</span>
+                <span>🎓 Intermediate</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="course-card" role="listitem">
+            <div class="card-img">
+              <img src="images/graphics.jpg"
+                   alt="UI/UX design course — wireframes and design tools on screen"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🎨</span><span>graphics.jpg</span></div>'" />
+            </div>
+            <div class="card-body">
+              <h3>UI/UX & Digital Design</h3>
+              <p>Figma, user research, and design thinking — create interfaces people actually love to use.</p>
+              <div class="card-meta">
+                <span>⏱ 10 weeks</span>
+                <span>🎓 All levels</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="courses.html" class="btn btn-dark">View All 25+ Courses →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US (dark section) -->
+    <section class="section section-dark" aria-labelledby="why-heading">
+      <div class="section-inner">
+        <header class="section-header centered">
+          <span class="section-label">Why Choose Us</span>
+          <h2 id="why-heading">Learning That Actually Works</h2>
+          <p>We obsess over outcomes, not enrolment numbers.</p>
+        </header>
+
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:1rem;">
+          <div style="text-align:center; padding:1.5rem;">
+            <div style="font-size:2.5rem; margin-bottom:1rem;">🛠️</div>
+            <h3>Project-Based Learning</h3>
+            <p>Every course ends with a portfolio-ready project — not just a certificate.</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem;">
+            <div style="font-size:2.5rem; margin-bottom:1rem;">🤝</div>
+            <h3>Mentorship Included</h3>
+            <p>Weekly live sessions with industry professionals who've done what you want to do.</p>
+          </div>
+          <div style="text-align:center; padding:1.5rem;">
+            <div style="font-size:2.5rem; margin-bottom:1rem;">🚀</div>
+            <h3>Career Support</h3>
+            <p>Resume reviews, mock interviews, and job referrals with our 200+ hiring partners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES SECTION (External links) -->
+    <section class="section section-alt" aria-labelledby="resources-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <span class="section-label">Free Resources</span>
+          <h2 id="resources-heading">Learn More From the Best</h2>
+          <p>Trusted external resources we recommend to every student.</p>
+        </header>
+
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
+          <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" class="ext-link-card">
+            <div class="ext-icon">📚</div>
+            <div>
+              <h4>MDN Web Docs</h4>
+              <p>The definitive reference for HTML, CSS, and JavaScript.</p>
+              <span>Visit MDN ↗</span>
+            </div>
+          </a>
+          <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="ext-link-card">
+            <div class="ext-icon">🎓</div>
+            <div>
+              <h4>Coursera</h4>
+              <p>University-backed courses to supplement your Academy training.</p>
+              <span>Visit Coursera ↗</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="ext-link-card">
+            <div class="ext-icon">💻</div>
+            <div>
+              <h4>GitHub</h4>
+              <p>Host your projects and collaborate with developers worldwide.</p>
+              <span>Visit GitHub ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="cta-band-inner">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Join over 12,000 graduates who transformed their careers with Digital Skills Academy.</p>
+        <div class="cta-band-actions">
+          <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+          <a href="contact.html" class="btn btn-outline">Talk to Admissions</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">DS</div>
+            <div class="logo-text">Digital Skills<span>Training Academy</span></div>
+          </a>
+          <p>Empowering professionals with the digital skills they need to thrive in a technology-driven world.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="courses.html">Web Development</a></li>
+            <li><a href="courses.html">Data Science</a></li>
+            <li><a href="courses.html">Cybersecurity</a></li>
+            <li><a href="courses.html">Cloud Computing</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academy</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="about.html">Mission & Vision</a></li>
+            <li><a href="contact.html">Careers</a></li>
+            <li><a href="contact.html">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">Student Portal ↗</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Digital Skills Training Academy. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
